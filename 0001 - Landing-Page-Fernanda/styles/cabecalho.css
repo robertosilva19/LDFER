@@ -1,0 +1,80 @@
+.cabecalho {
+  background: var(--verde-claro);
+}
+
+.cabecalho .cabecalho__nav {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  flex-direction: column;
+  row-gap: 1.6rem;
+  padding: 4.0rem 1.6rem;
+  white-space: nowrap;
+  width: 100%; /* Garante que ocupe toda a largura da tela */
+  max-width: 100%; /* Evita que ultrapasse a largura da tela */
+  box-sizing: border-box; /* Inclui padding e border no cálculo do tamanho */
+}
+
+.cabecalho__nav--logo {
+  width: 20rem; /* Ajuste conforme necessário */
+  height: auto; /* Mantém a proporção */
+  margin: auto; /* Centraliza o logo horizontalmente */
+}
+
+.cabecalho__nav--lista {
+  
+  font-size: 1.5rem;
+}
+
+.cabecalho .cabecalho__nav .cabecalho__nav--line {
+  width: 100%;
+  border-bottom: .1rem solid black;
+}
+
+.cabecalho .cabecalho__nav .cabecalho__nav--lista {
+  display: inline-flex;
+  list-style: none;
+}
+
+.cabecalho .cabecalho__nav .cabecalho__nav--lista a {
+  color: #0C0421;
+  margin: 0 2.1rem;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.cabecalho .cabecalho__nav .cabecalho__nav--lista a:hover {
+  font-weight: 600;
+  transition: .5s;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .cabecalho .cabecalho__nav {
+    width: 100%; /* Garante que ocupe toda a largura em telas pequenas */
+    padding: 2rem 1rem; /* Ajusta o espaçamento */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Tablet */
+
+  .cabecalho__nav--logo {
+    width: 25rem; /* Ajuste para tablets */
+    height: auto;
+  }
+
+  .cabecalho__nav--lista {
+    font-size: 2.2rem;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .cabecalho__nav--logo {
+    width: 30rem; /* Ajuste para desktops */
+    height: auto;
+  }
+}

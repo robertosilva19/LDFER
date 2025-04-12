@@ -1,0 +1,44 @@
+:root {
+  --fonte: "Montserrat", 'Krona One', 'Open Sans', sans-serif;
+
+  /* Gradientes e fundos */
+  --gradiente: linear-gradient(180deg, #F8F9FA 0%, #FFFFFF 80%);
+  --gradiente-card: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(30, 58, 95, 0.05) 100%);
+
+  /* Paleta principal */
+  --azul-principal: #1E3A5F;         /* Azul petróleo */
+  --verde-cta: #2ECC71;              /* Verde menta */
+  --cinza-claro: #F8F9FA;            /* Fundo claro */
+  --cinza-medio: #CED4DA;            /* Detalhes e divisores */
+  --branco: #FFFFFF;
+
+  /* Substituindo cores anteriores (ajuste conforme necessário) */
+  --verde-claro: var(--verde-cta);   /* Aplicado em botões ou destaques */
+  --azul-botao: var(--verde-cta);    /* Botão CTA */
+  --lilas-claro: #A6B6D9;            /* Tom suave pra pequenos destaques */
+  --lilas-escuro: var(--azul-principal);
+  --azul-escuro: var(--azul-principal);
+
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+body {
+  font-family: var(--fonte);
+  background-color: var(--cinza-claro);
+  color: var(--azul-principal);
+}
+
+
